@@ -350,12 +350,12 @@
 // When temperature exceeds max temp, your heater will be switched off.
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
 // You should use MINTEMP for thermistor short/failure protection.
-#define HEATER_0_MAXTEMP 275
+#define HEATER_0_MAXTEMP 250
 #define HEATER_1_MAXTEMP 275
 #define HEATER_2_MAXTEMP 275
 #define HEATER_3_MAXTEMP 275
 #define HEATER_4_MAXTEMP 275
-#define BED_MAXTEMP 150
+#define BED_MAXTEMP 120
 
 //===========================================================================
 //============================= PID Settings ================================
@@ -640,7 +640,7 @@
  *   M204 T    Travel Acceleration
  */
 //MOE Changed
-//#define DEFAULT_ACCELERATION          500    // X, Y, Z and E acceleration for printing moves
+//#define DEFAULT_ACCELERATION          575    // X, Y, Z and E acceleration for printing moves
 //#define DEFAULT_RETRACT_ACCELERATION  1000    // E acceleration for retracts
 //#define DEFAULT_TRAVEL_ACCELERATION   1000    // X, Y, Z acceleration for travel (non printing) moves
 #define DEFAULT_ACCELERATION          500    // X, Y, Z and E acceleration for printing moves
@@ -656,9 +656,9 @@
  * value set here, it may happen instantaneously.
  */
 //MOE Changed
-//#define DEFAULT_XJERK                  2.5
-//#define DEFAULT_YJERK                  2.5
-//#define DEFAULT_ZJERK                  0.3
+//#define DEFAULT_XJERK                  5.0
+//#define DEFAULT_YJERK                  5.0
+//#define DEFAULT_ZJERK                  0.4
 //#define DEFAULT_EJERK                  5.0
 #define DEFAULT_XJERK                  2.5
 #define DEFAULT_YJERK                  2.5
@@ -1123,7 +1123,7 @@
 #endif
 
 // Add a menu item to move between bed corners for manual bed adjustment
-//#define LEVEL_BED_CORNERS
+#define LEVEL_BED_CORNERS
 
 #if ENABLED(LEVEL_BED_CORNERS)
   #define LEVEL_CORNERS_INSET 30    // (mm) An inset for corner leveling
@@ -1271,12 +1271,12 @@
 // @section temperature
 
 // Preheat Constants
-#define PREHEAT_1_TEMP_HOTEND 180
-#define PREHEAT_1_TEMP_BED     70
+#define PREHEAT_1_TEMP_HOTEND 205
+#define PREHEAT_1_TEMP_BED     60
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
-#define PREHEAT_2_TEMP_HOTEND 240
-#define PREHEAT_2_TEMP_BED    110
+#define PREHEAT_2_TEMP_HOTEND 250
+#define PREHEAT_2_TEMP_BED    80
 #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
 
 /**
@@ -1294,7 +1294,7 @@
 
 #if ENABLED(NOZZLE_PARK_FEATURE)
   // Specify a park position as { X, Y, Z }
-  #define NOZZLE_PARK_POINT { (X_MIN_POS + 10), (Y_MAX_POS - 10), 20 }
+  #define NOZZLE_PARK_POINT { (X_MIN_POS + 3), (Y_MAX_POS - 3), 10 }
   #define NOZZLE_PARK_XY_FEEDRATE 100   // X and Y axes feedrate in mm/s (also used for delta printers Z axis)
   #define NOZZLE_PARK_Z_FEEDRATE 5      // Z axis feedrate in mm/s (not used for delta printers)
 #endif

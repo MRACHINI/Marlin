@@ -609,8 +609,8 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
  //MOE Changed
- //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 95 }
- #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
+ //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
+ #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 95 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -618,8 +618,8 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
  //MOE Changed
-//#define DEFAULT_MAX_FEEDRATE          { 2500, 2500, 100, 25 }
-#define DEFAULT_MAX_FEEDRATE          { 300, 300, 5, 25 }
+//#define DEFAULT_MAX_FEEDRATE          { 500, 500, 100, 25 }
+#define DEFAULT_MAX_FEEDRATE          { 500, 500, 100, 25 }
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
@@ -662,8 +662,8 @@
 //#define DEFAULT_EJERK                  5.0
 #define DEFAULT_XJERK                  2.5
 #define DEFAULT_YJERK                  2.5
-#define DEFAULT_ZJERK                  0.2
-#define DEFAULT_EJERK                  2.5
+#define DEFAULT_ZJERK                  0.3
+#define DEFAULT_EJERK                  5.0
 
 /**
  * S-Curve Acceleration
