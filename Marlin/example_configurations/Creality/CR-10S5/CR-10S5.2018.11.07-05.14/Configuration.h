@@ -101,7 +101,7 @@
 //#define SHOW_CUSTOM_BOOTSCREEN
 
 // Enable to show the bitmap in Marlin/_Statusscreen.h on the status screen.
-#define CUSTOM_STATUS_SCREEN_IMAGE
+//#define CUSTOM_STATUS_SCREEN_IMAGE
 
 // @section machine
 
@@ -609,8 +609,8 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
  //MOE Changed
- //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
- #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 95 }
+ //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 95 }
+ #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -619,7 +619,7 @@
  */
  //MOE Changed
 //#define DEFAULT_MAX_FEEDRATE          { 500, 500, 100, 25 }
-#define DEFAULT_MAX_FEEDRATE          { 500, 500, 100, 25 }
+#define DEFAULT_MAX_FEEDRATE          { 300, 300, 25, 25 }
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
@@ -645,7 +645,7 @@
 //#define DEFAULT_TRAVEL_ACCELERATION   1000    // X, Y, Z acceleration for travel (non printing) moves
 #define DEFAULT_ACCELERATION          500    // X, Y, Z and E acceleration for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  500    // E acceleration for retracts
-#define DEFAULT_TRAVEL_ACCELERATION   1000    // X, Y, Z acceleration for travel (non printing) moves
+#define DEFAULT_TRAVEL_ACCELERATION   500    // X, Y, Z acceleration for travel (non printing) moves
 
 /**
  * Default Jerk (mm/s)
@@ -660,8 +660,8 @@
 //#define DEFAULT_YJERK                  5.0
 //#define DEFAULT_ZJERK                  0.4
 //#define DEFAULT_EJERK                  5.0
-#define DEFAULT_XJERK                  2.5
-#define DEFAULT_YJERK                  2.5
+#define DEFAULT_XJERK                  5.0
+#define DEFAULT_YJERK                  5.0
 #define DEFAULT_ZJERK                  0.3
 #define DEFAULT_EJERK                  5.0
 
