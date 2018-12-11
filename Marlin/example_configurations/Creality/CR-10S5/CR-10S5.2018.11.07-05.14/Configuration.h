@@ -619,7 +619,7 @@
  */
  //MOE Changed
 //#define DEFAULT_MAX_FEEDRATE          { 500, 500, 100, 25 }
-#define DEFAULT_MAX_FEEDRATE          { 300, 300, 25, 25 }
+#define DEFAULT_MAX_FEEDRATE          { 500, 500, 100, 25 }
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
@@ -629,7 +629,7 @@
  */
 //MOE Changed
 //#define DEFAULT_MAX_ACCELERATION      { 500, 500, 100, 10000 }
-#define DEFAULT_MAX_ACCELERATION      { 300, 300, 100, 5000 }
+#define DEFAULT_MAX_ACCELERATION      { 500, 250, 100, 10000 }
 
 /**
  * Default Acceleration (change/s) change = mm/s
@@ -660,7 +660,7 @@
 //#define DEFAULT_YJERK                  5.0
 //#define DEFAULT_ZJERK                  0.4
 //#define DEFAULT_EJERK                  5.0
-#define DEFAULT_XJERK                  5.0
+#define DEFAULT_XJERK                  7.5
 #define DEFAULT_YJERK                  5.0
 #define DEFAULT_ZJERK                  0.3
 #define DEFAULT_EJERK                  5.0
